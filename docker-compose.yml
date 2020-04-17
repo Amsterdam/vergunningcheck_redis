@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  jvvs_redis:
+    build:
+      context: .
+    environment:
+    - REDIS_MAXMEM=100mb
+    - REDIS_PASSWORD=secret
